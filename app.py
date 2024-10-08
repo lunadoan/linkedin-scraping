@@ -84,6 +84,9 @@ if st.button("Start Scraping"):
         posts_data = []
         post_count = 0
         LOAD_PAUSE_TIME = 10
+        
+        # Placeholder for live post count
+        post_count_placeholder = st.empty()
 
         while post_count < max_posts:
             linkedin_soup = bs(browser.page_source, "html.parser")
@@ -116,6 +119,9 @@ if st.button("Start Scraping"):
                 })
 
                 post_count += 1
+                
+                # Update the placeholder with the current number of posts scraped
+                post_count_placeholder.write(f"Scraped {post_count} posts...")
 
             browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             time.sleep(LOAD_PAUSE_TIME)
@@ -136,7 +142,6 @@ if st.button("Start Scraping"):
         # Save DataFrame to CSV
         csv_file = "scraped_posts.csv"
         df.to_csv(csv_file, index=False)
-        st.success(f"Scraping completed! {post_count} posts scraped.")
         
         # Provide download link for the entire dataset (not just top and bottom 20 posts)
         st.download_button(
@@ -150,4 +155,3 @@ if st.button("Start Scraping"):
         browser.quit()
     else:
         st.warning("Please upload the cookies file and provide a valid LinkedIn profile URL.")
-
