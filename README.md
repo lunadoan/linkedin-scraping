@@ -2,6 +2,13 @@
 
 This LinkedIn Scraper App is built with Streamlit and Selenium. It allows users to scrape LinkedIn posts data, such as the content, reaction count, and comment count, from a public LinkedIn profile using a `cookies.txt` file for authentication. The app provides the top 20 and bottom 20 posts based on reactions and comments.
 
+The UI
+
+![Linked scraper posts and comments](image.png)
+
+The Output
+![Data](image-1.png)
+
 ## Table of Contents
 
 1. [Requirements](#requirements)
