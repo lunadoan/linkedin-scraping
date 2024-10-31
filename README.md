@@ -51,6 +51,8 @@ To run this app, you will need the following:
 
    After downloading, place the ChromeDriver executable in a directory in your system PATH or specify its path in your script.
 
+   Check the version: chrome://version
+
 ### Getting the `cookies.txt` File
 
 To scrape LinkedIn, you need to authenticate by providing a `cookies.txt` file for your LinkedIn session. This can be obtained using a browser extension:
