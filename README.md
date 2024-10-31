@@ -7,6 +7,7 @@ The UI
 ![Linked scraper posts and comments](image.png)
 
 The Output
+
 ![Data](image-1.png)
 
 ## Table of Contents
