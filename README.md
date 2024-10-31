@@ -41,7 +41,7 @@ To run this app, you will need the following:
    ```
 
 3. **Download Chrome WebDriver**  
-   Since Selenium requires Chrome WebDriver, make sure to download the version matching your installed Chrome browser version. [Download ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+   Since Selenium requires Chrome WebDriver, make sure to download the version matching your installed Chrome browser version. [Download ChromeDriver](https://developer.chrome.com/docs/chromedriver/downloads).
 
    After downloading, place the ChromeDriver executable in a directory in your system PATH or specify its path in your script.
 
@@ -49,9 +49,9 @@ To run this app, you will need the following:
 
 To scrape LinkedIn, you need to authenticate by providing a `cookies.txt` file for your LinkedIn session. This can be obtained using a browser extension:
 
-1. Install the [Get cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/njobfdjcljkbgbhkmjbmgbdhgpbllbjp) extension for Chrome or Firefox.
+1. Install the [Get cookies.txt](https://chromewebstore.google.com/detail/get-cookiestxt-clean/ahmnmhfbokciafffnknlekllgcnafnie) extension for Chrome.
 2. Log in to LinkedIn on your browser.
-3. Use the extension to export cookies for LinkedIn as `cookies.txt`.
+3. Use the extension to export cookies for LinkedIn.
 
 ### Running the App
 
@@ -59,10 +59,8 @@ To scrape LinkedIn, you need to authenticate by providing a `cookies.txt` file f
    In your terminal, navigate to the project directory and run:
 
    ```bash
-   streamlit run your_script_name.py
+   python -m streamlit run app.py
    ```
-
-   Replace `your_script_name.py` with the actual file name of your script.
 
 2. **Access the App**  
    Once the app is running, it will open in your default browser, typically at `http://localhost:8501`.
@@ -70,13 +68,13 @@ To scrape LinkedIn, you need to authenticate by providing a `cookies.txt` file f
 ### Usage
 
 1. **Upload Cookies**  
-   Upload the `cookies.txt` file to allow the app to authenticate your LinkedIn session.
+   Upload the cookies file to allow the app to authenticate your LinkedIn session.
 
 2. **Enter Profile URL**  
-   In the app, enter the LinkedIn profile URL you wish to scrape (e.g., `https://www.linkedin.com/in/username/`).
+   In the app, enter the LinkedIn profile URL you wish to scrape (e.g., `https://www.linkedin.com/in/{user_id}/recent-activity/all/`).
 
 3. **Specify Maximum Number of Posts**  
-   Set the maximum number of posts to scrape (up to 3000).
+   Set the maximum number of posts to scrape (up to 100,000).
 
 4. **Start Scraping**  
    Click on the "Start Scraping" button. The app will log in to LinkedIn, scroll through the specified profile, and scrape recent posts.
