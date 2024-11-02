@@ -36,7 +36,7 @@ To run this app, you will need the following:
 1. **Clone the Repository**  
    Clone this repository to your local machine.
 
-   ⚠️ If you don't have Python in your PC, go to [Replit](https://replit.com/) to run the app without installing Python. Any other cloud that supports Selenium can work.
+   ⚠️ **If you don't have Python in your PC**, go to [Replit](https://replit.com/) to run the app without installing Python. Any other cloud that supports Selenium can work.
 
 2. **Install the Required Packages**  
    Run the following command to install all necessary packages:
@@ -44,7 +44,7 @@ To run this app, you will need the following:
    ```bash
    pip install streamlit selenium pandas beautifulsoup4
    ```
-   Note: No need to install the packages if you use Replit. 
+   **Note**: No need to install the packages if you use Replit. 
 
 3. **Download Chrome WebDriver**  
    Since Selenium requires Chrome WebDriver, make sure to download the version matching your installed Chrome browser version. [Download ChromeDriver](https://developer.chrome.com/docs/chromedriver/downloads).
