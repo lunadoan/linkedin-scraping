@@ -71,7 +71,7 @@ To scrape LinkedIn, you need to authenticate by providing a `cookies.txt` file f
    ```
 
 2. **Access the App**  
-   Once the app is running, it will open in your default browser, typically at `http://localhost:8501`.
+   Once the app is running, it will open in your default browser, typically at `http://localhost:8501`, or in the web window on Replit.
 
 ### Usage
 
